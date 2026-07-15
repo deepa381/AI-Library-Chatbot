@@ -1,6 +1,5 @@
 import api from './axios';
 import type { Fine } from '../types';
-import type { PaginatedResponse } from './books';
 
 export const finesApi = {
   getFines: async () => {

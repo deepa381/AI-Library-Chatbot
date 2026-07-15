@@ -1,6 +1,5 @@
 import api from './axios';
 import type { Reservation } from '../types';
-import type { PaginatedResponse } from './books';
 
 export const reservationsApi = {
   getReservations: async () => {

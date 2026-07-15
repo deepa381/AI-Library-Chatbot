@@ -8,6 +8,7 @@ import { Input } from '../components/ui/input';
 import { BookCard } from '../components/books/BookCard';
 import { toast } from 'react-hot-toast';
 import { Sparkles, Search } from 'lucide-react';
+import type { Book } from '../types';
 
 export function RecommendPage() {
   const [query, setQuery] = useState('');
@@ -71,7 +72,7 @@ export function RecommendPage() {
                 Featured Recommendations
               </h3>
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                {mutation.data.books.map((book) => (
+                {mutation.data.books.map((book: Book) => (
                   <BookCard key={book.id} book={book} />
                 ))}
               </div>

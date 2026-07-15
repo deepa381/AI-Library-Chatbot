@@ -109,3 +109,8 @@ export interface RecommendationHistory {
   created_at: string;
   recommended_books: Book[];
 }
+
+export interface RecommendationResponse {
+  response: string;
+  books: Book[];
+}

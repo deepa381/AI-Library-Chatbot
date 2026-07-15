@@ -1,6 +1,5 @@
 import api from './axios';
 import type { BorrowRecord } from '../types';
-import type { PaginatedResponse } from './books';
 
 export const borrowApi = {
   getBorrows: async () => {

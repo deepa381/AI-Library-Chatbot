@@ -1,9 +1,9 @@
 import api from './axios';
-import type { RecommendationHistory } from '../types';
+import type { RecommendationResponse } from '../types';
 
 export const recommendApi = {
   getRecommendations: async (query: string) => {
-    const response = await api.post<RecommendationHistory>('/recommend/', { query });
+    const response = await api.post<RecommendationResponse>('/recommend/', { query });
     return response.data;
   }
 };
