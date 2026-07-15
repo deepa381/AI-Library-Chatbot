@@ -12,7 +12,7 @@ env/
 .env
 
 # SQLite Database
-db.sqlite3
+
 
 # Django
 media/
